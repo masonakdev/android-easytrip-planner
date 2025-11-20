@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEditVacationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title" />
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bermuda Trip, Spring Break, London Trip"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotel or accommodation"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/editTextAccommodation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hotel name or place you are staying"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start date"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/editTextStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="YYYY-MM-DD"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End date"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/editTextEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="YYYY-MM-DD"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/buttonSaveVacation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/buttonDeleteVacation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete vacation"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/buttonStartAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set start date alert"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/buttonEndAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set end date alert"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/buttonShareVacation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share vacation details"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutExcursionsSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Excursions" />
+
+            <Button
+                android:id="@+id/buttonAddExcursion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add excursion"
+                android:layout_marginTop="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewExcursions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
